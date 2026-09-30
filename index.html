@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
     </head>
   <body class="min-h-screen bg-slate-950 bg-gradient-to-br from-slate-950 via-violet-950/40 to-amber-950/30 text-slate-100 antialiased">
     
-  <header class="sticky top-0 z-10 bg-slate-950/80 backdrop-blur">
+  <header class="sticky top-0 z-10 bg-slate-950/80 backdrop-blur shadow-md">
     <nav aria-label="Primary" class="flex items-center justify-between px-6 py-4">
         <div class="flex items-center gap-3">
             <span class="flex h-9 w-9 items-center justify-center rounded-full bg-violet-600 shrink-0">
@@ -20,8 +20,8 @@
         </div>
         <div class="flex items-center gap-6 whitespace-nowrap">
             <a href="#">Features</a>
-            <a href="#">Menu</a>
-            <a href="#">Live music</a>
+            <a href="#menu">Menu</a>
+            <a href="#live-music">Live music</a>
             <a href="#">Sign in</a>
             <a href="#" class="bg-violet-600 text-white px-4 py-2 rounded-lg"> Reserve a booth</a>
         </div>
@@ -106,7 +106,56 @@
         </article>
       </div>
     </section>
-    <section id="concerts" aria-labelledby="concerts-title" class="mx-auto max-w-6xl px-6 py-20">
+    <section id="menu" aria-labelledby="menu-title" class="mx-auto max-w-6xl px-6 py-20">
+      <h2 id="menu-title" class="text-2xl md:text-3xl font-bold mb-10 text-slate-100 text-center">
+        Menu Cantina
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <article class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-2xl p-8 flex flex-col items-center text-center">
+          <div class="size-12 rounded-xl bg-amber-500/10 ring-1 ring-amber-400/20 mb-6 flex items-center justify-center" aria-hidden="true">
+            <!-- Drink Icon: Goblet -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-amber-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M7 2h10v2a5 5 0 0 1-5 5A5 5 0 0 1 7 4V2z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M9 21h6m-3-6v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg text-slate-100 mb-2">Blue Milk</h3>
+          <p class="text-slate-300 leading-relaxed text-base">
+            Rafraîchissant lait bantha, spécialité de Tatooine, servi frais.
+          </p>
+        </article>
+        <!-- Card 2 -->
+        <article class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-2xl p-8 flex flex-col items-center text-center">
+          <div class="size-12 rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 mb-6 flex items-center justify-center" aria-hidden="true">
+            <!-- Dish Icon: Bowl -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-violet-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <ellipse cx="12" cy="9" rx="8" ry="3" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M4 9v2a8 3 0 0 0 16 0V9" stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg text-slate-100 mb-2">Soupe de Womp rat</h3>
+          <p class="text-slate-300 leading-relaxed text-base">
+            Délicieuse soupe épicée, recette du chef Ewok. À savourer bien chaud.
+          </p>
+        </article>
+        <!-- Card 3 -->
+        <article class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-2xl p-8 flex flex-col items-center text-center">
+          <div class="size-12 rounded-xl bg-amber-500/10 ring-1 ring-amber-400/20 mb-6 flex items-center justify-center" aria-hidden="true">
+            <!-- Drink Icon: Glass -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-amber-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <rect x="7" y="2" width="10" height="3" rx="1.5" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M9 5v11a3 3 0 0 0 6 0V5" stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg text-slate-100 mb-2">Jawa Juice</h3>
+          <p class="text-slate-300 leading-relaxed text-base">
+            Boisson énergisante sucrée, favorite des mécaniciens de Mos Eisley.
+          </p>
+        </article>
+      </div>
+    </section>
+    <section id="live-music" aria-labelledby="concerts-title" class="mx-auto max-w-6xl px-6 py-20 scroll-mt-24">
       <h2 id="concerts-title" class="text-2xl md:text-3xl font-bold mb-10 text-slate-100 text-center">
         Les concerts de la semaine
       </h2>
