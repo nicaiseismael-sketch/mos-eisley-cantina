@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mos Eisley Cantina · Tatooine's busiest watering hole</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+  <body class="min-h-screen bg-slate-950 bg-gradient-to-br from-slate-950 via-violet-950/40 to-amber-950/30 text-slate-100 antialiased">
+    
+  <header class="sticky top-0 z-10 bg-slate-950/80 backdrop-blur">
+    <nav aria-label="Primary" class="flex items-center justify-between px-6 py-4">
+        <div class="flex items-center gap-3">
+            <span class="flex h-9 w-9 items-center justify-center rounded-full bg-violet-600 shrink-0">
+               M
+            </span>
+            <span class="font-semibold">
+                Mos Eisley Cantina
+            </span>
+        </div>
+        <div class="flex items-center gap-6 whitespace-nowrap">
+            <a href="#">Features</a>
+            <a href="#">Menu</a>
+            <a href="#">Live music</a>
+            <a href="#">Sign in</a>
+            <a href="#" class="bg-violet-600 text-white px-4 py-2 rounded-lg"> Reserve a booth</a>
+        </div>
+    </nav>
+  </header>
+  <main>
+    <section class="grid md:grid-cols-2 gap-12 items-center px-6 py-16">
+        <div>
+            <span class=" inline-block rounded-full bg-violet-500/10 text-violet-200 px-3 py-1 text-sm">
+                Ouvert tous les soirs, 3 ABY
+            </span>
+            <h1 class="mt-6 text-4xl md:text-6xl font-bold tracking-tight">
+                Trouvez votre point d'eau sur <span class=" bg-gradient-to-r from-violet-400 to-amber-300 bg-clip-text text-transparent">Tatooine</span>
+            </h1>
+            <p class="mt-6 text-lg text-slate-300 leading-relaxed">
+                Musique live, rencontres improbables et nuits sans fin : faites une pause entre deux voyages dans la cantina la plus animée de Tatooine.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+                <a href="#" class="bg-violet-600 text-white px-5 py-3 rounded-lg hover:bg-violet-500 focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">Réserver un box</a>
+                <a href="#" class="border border-slate-600 text-slate-100 px-5 py-3 rounded-lg hover:bg-white/10 focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">Découvrir le menu</a>
+
+            </div>
+        </div>
+        <figure class="rounded-2xl overflow-hidden ring-1 ring-white/10">
+            <img src="https://product-builder-fullstack.s3.eu-west-3.amazonaws.com/M02_Web-Foundation/unsplash-cantina.jpeg" alt="Mos Eisley Cantina" class="w-full h-full object-cover">
+            <figcaption class="bg-white/5 px-4 py-3 text-sm text-slate-300">
+                Musique live. Nuits tardives. Recontres galactiques.
+            </figcaption>
+
+        </figure>
+    </section>
+    <section id="features" aria-labelledby="features-title" class="mx-auto max-w-6xl px-6 py-20">
+      <h2 id="features-title" class="text-2xl md:text-3xl font-bold mb-10 text-slate-100 text-center">
+        Pourquoi choisir Mos Eisley Cantina&nbsp;?
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <article class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-2xl p-8 flex flex-col items-center text-center">
+          <div class="size-12 rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 mb-6 flex items-center justify-center" aria-hidden="true">
+            <!-- Icône Musique: Note -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-2v13" />
+              <circle cx="6" cy="19" r="3" fill="currentColor" class="text-violet-300"/>
+              <circle cx="18" cy="17" r="3" fill="currentColor" class="text-violet-300"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg text-slate-100 mb-2">Musique live chaque soir</h3>
+          <p class="text-slate-300 leading-relaxed text-base">
+            Du coucher au lever du soleil, assez fort pour couvrir la voix d'un chasseur de primes.
+          </p>
+        </article>
+        <!-- Card 2 -->
+        <article class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-2xl p-8 flex flex-col items-center text-center">
+          <div class="size-12 rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 mb-6 flex items-center justify-center" aria-hidden="true">
+            <!-- Icône Contrebandier: Sac d’argent -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-amber-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a5 5 0 00-10 0v2M3 9.5A5.5 5.5 0 008.5 15h7A5.5 5.5 0 0021 9.5c0-3.032-2.468-5.5-5.5-5.5h-7C5.468 4 3 6.468 3 9.5z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 15v2a4 4 0 108 0v-2"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg text-slate-100 mb-2">Contrebandiers bienvenus.</h3>
+          <p class="text-slate-300 leading-relaxed text-base">
+            Aucune question posée. Banquettes au fond, aucun registre tenu.
+          </p>
+        </article>
+        <!-- Card 3 -->
+        <article class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-2xl p-8 flex flex-col items-center text-center">
+          <div class="size-12 rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 mb-6 flex items-center justify-center" aria-hidden="true">
+            <!-- Icône Droïde: Robot -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-violet-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <rect x="6" y="8" width="12" height="8" rx="4" stroke="currentColor" stroke-width="2" fill="none"/>
+              <circle cx="9" cy="12" r="1" fill="currentColor"/>
+              <circle cx="15" cy="12" r="1" fill="currentColor"/>
+              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 8V6M9 8V6M15 8V6"/>
+              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M8 16v2M16 16v2"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg text-slate-100 mb-2">Droïdes : voir le règlement.</h3>
+          <p class="text-slate-300 leading-relaxed text-base">
+            Limites sur la piste. Mise en veille recommandée.
+          </p>
+        </article>
+      </div>
+    </section>
+    <section id="concerts" aria-labelledby="concerts-title" class="mx-auto max-w-6xl px-6 py-20">
+      <h2 id="concerts-title" class="text-2xl md:text-3xl font-bold mb-10 text-slate-100 text-center">
+        Les concerts de la semaine
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article class="min-w-0 bg-white/[0.03] border border-white/10 backdrop-blur rounded-2xl p-8 flex flex-col">
+          <p class="text-sm text-amber-300">Vendredi · 21h</p>
+          <h3 class="mt-2 font-semibold text-lg text-slate-100">Figrin D’an and the Modal Nodes</h3>
+          <a href="#" class="mt-6 inline-flex w-fit rounded-lg bg-violet-600 px-4 py-2 text-white hover:bg-violet-500 focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">Réserver</a>
+        </article>
+        <article class="min-w-0 bg-white/[0.03] border border-white/10 backdrop-blur rounded-2xl p-8 flex flex-col">
+          <p class="text-sm text-amber-300">Samedi · 22h</p>
+          <h3 class="mt-2 font-semibold text-lg text-slate-100">The Twin Suns</h3>
+          <a href="#" class="mt-6 inline-flex w-fit rounded-lg bg-violet-600 px-4 py-2 text-white hover:bg-violet-500 focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">Réserver</a>
+        </article>
+        <article class="min-w-0 bg-white/[0.03] border border-white/10 backdrop-blur rounded-2xl p-8 flex flex-col">
+          <p class="text-sm text-amber-300">Dimanche · 20h</p>
+          <h3 class="mt-2 font-semibold text-lg text-slate-100">Dune Echoes</h3>
+          <a href="#" class="mt-6 inline-flex w-fit rounded-lg bg-violet-600 px-4 py-2 text-white hover:bg-violet-500 focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">Réserver</a>
+        </article>
+      </div>
+    </section>
+  </main>
+  </body>
+</html>
